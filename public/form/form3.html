@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+	<form action="./formResult.html">
+	<input type="text" id=nickname name=nickname>
+	<input type="button" id="button" name="button" value="제출"
+	onclick="here();">
+	
+	</form>
+	<script type="text/javascript">
+	function here(){
+		alert("nickname: "+document.getElementById("nickname").value);
+		alert("nickname: "+document.getElementById("nickname").value);
+		document.getElementById("form").submit();
+		
+	}
+	
+	</script>
+	 
+
+</body>
+</html>
