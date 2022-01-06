@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+}
+</style>
+</head>
+
+
+
+<body>
+<form action="./formResult.html" method="post" id="form" name="form" enctype="multipart/form-data">
+<input type="number" id="" name="">
+<br><input type="number" id="" name="" min="1">
+<br><input type="number" id="" name="" max="5">
+<br><input type="number" id="" name="" min="1" max="6">
+<br><input type="number" id="" name="" step="3">
+<br><input type="number" id="" name="" value="1">
+<br><input type="number" id="" name="" placeholder="3">
+<p>sns</p>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+
+
+</form>
+
+	<script type="text/javascript">
+		function here() {
+			/* alert("password4: " + document.getElementById("password4").value);
+			document.getElementById("form").submit(); */
+			
+
+			if(document.getElementById("password2").value != document.getElementById("password3").value) {
+				alert("패스워드가 일치 하지 않습니다.!");
+				document.getElementById("password2").value="";
+				document.getElementById("password3").value="";
+				document.getElementById("password2").focus();
+				
+             return false;				
+			}else{
+				alert("둘다같음!")
+			}
+			document.getElementById("form").submit();
+		}
+		
+	</script>
+
+
+
+
+</body>
+</html>
+
+
