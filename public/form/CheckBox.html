@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="uTF-8">
+<meta name="viewport content=width=dievice-width,initial-scale=1.0">
+
+
+</head>
+<body>
+
+	<form action="inputTime.html" method="get" id="" name=""
+		enctype="miltipart/form-data">
+		
+		
+
+		<input type="checkbox" id="" name="checkbox">약관동의
+		<input type="checkbox" id="" name="hobby" value="movie">영화보기
+		<input type="checkbox" id="" name="hobby" value="music">음악감상
+		
+		<input type="submit" value="제출">
+
+	</form>
+	<script type="text/javascript">
+		/* 체크하지않으면 넘어오는 값 없음
+		 */
+		function here() {
+			alert("time: " + document.getElementById("time").value);
+			document.getElementById("form").submit();
+		}
+	</script>
+
+</body>
+</html>
